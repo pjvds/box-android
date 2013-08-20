@@ -23,7 +23,7 @@ script: |-
   export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 
   # Write environment variables setup to /etc/profile
-  echo "export ANDRIOD_HOME=\"${ANDRIOD_HOME}\"" | sudo tee -a /etc/profile
+  echo "export ANDRIOD_HOME=\"${ANDROID_HOME}\"" | sudo tee -a /etc/profile
   echo 'PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"' | sudo tee -a /etc/profile
 
   # Install all available sdk tools
