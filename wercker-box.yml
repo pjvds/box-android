@@ -6,7 +6,7 @@ platform: ubuntu@12.04
 description: A box created for Andriod development
 keywords:
 	- andriod
-script:
+script: |
 	sdk_version="22.0.5"
 
 	# Install prerequisites
