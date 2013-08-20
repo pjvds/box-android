@@ -16,6 +16,7 @@ script: |-
   # Install SDK
   wget "http://dl.google.com/android/android-sdk_r${sdk_version}-linux.tgz"
   tar xzf "android-sdk_r${sdk_version}-linux.tgz"
+  rm "android-sdk_r${sdk_version}-linux.tgz"
 
   # Set environment variables
   export ANDROID_HOME=${PWD}/android-sdk-linux
