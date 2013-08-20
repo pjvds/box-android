@@ -28,4 +28,4 @@ script: |-
   echo 'PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"' | sudo tee -a /etc/profile
 
   # Install all available sdk tools
-  expect -c android-update.exp
+  expect android-update.exp
