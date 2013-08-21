@@ -10,6 +10,9 @@ script: |-
   sdk_version="22.0.5"
   profile="$HOME/.bashrc"
   
+  # Start with a clean profile
+  echo '' > "$profile"
+  
   # Install prerequisites
   sudo apt-get update -qq
   sudo apt-get install -qq --force-yes expect
