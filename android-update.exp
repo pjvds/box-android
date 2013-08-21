@@ -1,4 +1,6 @@
 set timeout -1;
+
+# Needed to get the path corrected
 source /etc/environment
 
 spawn android update sdk -u -f; 
