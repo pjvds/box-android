@@ -28,6 +28,9 @@ script: |-
   # Write environment variables setup to /etc/profile
   echo "export ANDROID_HOME=\"${ANDROID_HOME}\"" | sudo tee -a /etc/profile
   echo 'export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"' | sudo tee -a /etc/profile
+  
+  # Print /etc/profile
+  echo '/etc/profile updated to:\n$(cat /etc/profile)'
 
   # Install all available sdk tools
   sudo expect android-update.exp
