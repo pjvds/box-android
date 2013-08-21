@@ -1,8 +1,5 @@
 set timeout -1;
 
-# Needed to get the path corrected
-source /etc/environment
-
 spawn android update sdk -u -f; 
 expect { 
     "Do you accept the license" { exp_send "y\r" ; exp_continue }
