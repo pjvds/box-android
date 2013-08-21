@@ -34,7 +34,7 @@ script: |-
   echo 'export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"' | sudo tee -a $profile
   
   # Print $profile
-  echo "$profile updated to:\n\n$(cat $profile)"
+  echo -e "$profile updated to:\n\n$(cat $profile)"
 
   # Install all available sdk tools
-  sudo expect android-update.exp
+  expect android-update.exp
