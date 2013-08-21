@@ -8,7 +8,7 @@ keywords:
   - android
 script: |-
   sdk_version="22.0.5"
-  profile="$HOME/.profile"
+  profile="$HOME/.bashrc"
   
   # Install prerequisites
   sudo apt-get update -qq
