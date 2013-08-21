@@ -1,4 +1,5 @@
 set timeout -1;
+spawn echo "Path value in expect: $PATH"
 spawn android update sdk -u -f; 
 expect { 
     "Do you accept the license" { exp_send "y\r" ; exp_continue }
