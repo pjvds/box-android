@@ -1,5 +1,5 @@
 name: android
-version: 0.0.10
+version: 0.0.11
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
@@ -30,6 +30,11 @@ script: |-
   export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
 
   type android || { echo "Path: $PATH"; echo 'Android not availble after installation, terminating.'; exit 1; }
+
+  wget https://dl-ssl.google.com/android/repository/build-tools_r18.0.1-linux.zip
+  unzip build-tools_r18.0.1-linux.zip -d $ANDROID_HOME
+  mkdir -p $ANDROID_HOME/build-tools/
+  mv $ANDROID_HOME/android-4.3 $ANDROID_HOME/build-tools/18.0.1
 
   # Write environment variables setup to $profile
   echo "export ANDROID_HOME=\"${ANDROID_HOME}\"" | sudo tee -a $profile
