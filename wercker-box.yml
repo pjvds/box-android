@@ -45,3 +45,4 @@ script: |-
 
   # Install all available sdk tools
   expect /pipeline/build/android-update.exp
+  sudo apt-get clean
