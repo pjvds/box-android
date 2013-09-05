@@ -1,5 +1,5 @@
 name: android
-version: 0.0.9
+version: 0.0.10
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
