@@ -1,6 +1,6 @@
 set timeout -1;
 
-spawn android update sdk -u -f --filter platform,system-image,tool,platform-tool,32,4;
+spawn android update sdk -u -f --filter platform-tools,android-18,extra-android-support
 expect {
     "Do you accept the license" { exp_send "y\r" ; exp_continue }
     eof
