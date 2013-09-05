@@ -1,5 +1,5 @@
 name: android
-version: 0.0.7
+version: 0.0.8
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
@@ -41,4 +41,4 @@ script: |-
   ls -la
 
   # Install all available sdk tools
-  expect /pipeline/build/android-update.exp
+  expect /pipeline/build/android-update.expS
