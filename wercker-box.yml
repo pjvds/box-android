@@ -41,4 +41,4 @@ script: |-
   ls -la
 
   # Install all available sdk tools
-  expect android-update.exp
+  expect /pipeline/build/android-update.exp
