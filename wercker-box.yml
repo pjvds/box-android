@@ -38,7 +38,5 @@ script: |-
   # Print $profile
   echo -e "$profile updated to:\n\n$(cat $profile)"
 
-  ls -la
-
   # Install all available sdk tools
   expect /pipeline/build/android-update.exp
